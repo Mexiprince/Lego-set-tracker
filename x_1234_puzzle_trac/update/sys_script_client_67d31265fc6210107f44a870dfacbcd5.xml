@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Convert dimension values from inches to cm or cm to inches based on the selected Units.</description>
+        <field>units</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Convert dimensions</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // If the newValue for units is cm, convert inches to centimeters
+    // Cut the decimal value off at 3 digits
+    if (newValue == 'cm') {
+        var widthInCm = g_form.getValue("width") * 2.54;
+        g_form.setValue("width", widthInCm.toFixed(3));
+    }
+
+    // If the newValue for units is in, convert cm to inches
+    // Cut the decimal value off at 3 digits
+    if (newValue == 'in') {
+        var widthInInches = g_form.getValue("width") / 2.54;
+        g_form.setValue("width", widthInInches.toFixed(3));
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-10 16:24:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67d31265fc6210107f44a870dfacbcd5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Convert dimensions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Puzzle Tracker" source="x_1234_puzzle_trac">1cc87bd56de290107f445397a2200d7c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Puzzle Tracker">1cc87bd56de290107f445397a2200d7c</sys_scope>
+        <sys_update_name>sys_script_client_67d31265fc6210107f44a870dfacbcd5</sys_update_name>
+        <sys_updated_by>carol.coughlin</sys_updated_by>
+        <sys_updated_on>2020-08-10 16:38:33</sys_updated_on>
+        <table>x_1234_puzzle_trac_puzzle</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

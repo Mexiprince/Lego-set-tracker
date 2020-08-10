@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="units" table="x_1234_puzzle_trac_puzzle" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>units</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inches</label>
+            <language>en</language>
+            <name>x_1234_puzzle_trac_puzzle</name>
+            <sequence>0</sequence>
+            <sys_created_by>fred.luddy</sys_created_by>
+            <sys_created_on>2020-08-10 15:48:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24fb8661fc6210107f44a870dfacbca5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>fred.luddy</sys_updated_by>
+            <sys_updated_on>2020-08-10 15:48:54</sys_updated_on>
+            <value>in</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>units</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Centimeters</label>
+            <language>en</language>
+            <name>x_1234_puzzle_trac_puzzle</name>
+            <sequence>1</sequence>
+            <sys_created_by>fred.luddy</sys_created_by>
+            <sys_created_on>2020-08-10 15:48:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68fb8661fc6210107f44a870dfacbca6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>fred.luddy</sys_updated_by>
+            <sys_updated_on>2020-08-10 15:48:54</sys_updated_on>
+            <value>cm</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>units</element>
+            <name>x_1234_puzzle_trac_puzzle</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>fred.luddy</sys_created_by>
+            <sys_created_on>2020-08-10 15:48:54</sys_created_on>
+            <sys_id>5888dae5fc6210107f44a870dfacbcc3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>units</sys_name>
+            <sys_package display_value="Puzzle Tracker" source="x_1234_puzzle_trac">1cc87bd56de290107f445397a2200d7c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Puzzle Tracker">1cc87bd56de290107f445397a2200d7c</sys_scope>
+            <sys_update_name>sys_choice_x_1234_puzzle_trac_puzzle_units</sys_update_name>
+            <sys_updated_by>fred.luddy</sys_updated_by>
+            <sys_updated_on>2020-08-10 15:48:54</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
